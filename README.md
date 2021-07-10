@@ -1,5 +1,7 @@
 #### An open source, Django [customer relationship management][crm-wiki] platform (CRM).
 
+[crm-wiki]: http://en.wikipedia.org/wiki/Customer_relationship_management
+
 It's a web application written with Django as a full-stack.
 
 ## System Requirements
