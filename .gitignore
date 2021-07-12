@@ -75,6 +75,9 @@ celerybeat-schedule.*
 # SageMath parsed files 
 *.sage.py 
 
+#secrets files
+secrets.py
+
 # Environments 
 .env 
 .venv 
@@ -114,6 +117,3 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
-
-#secrets files
-secrets.py
