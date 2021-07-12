@@ -12,17 +12,35 @@
                         <form method='post' class='mx-5'>
                         {% csrf_token %}
                             <div class="row">
-                                {% for fm in form %}
                                     <div class="col-md-12">
                                         <div class="form-input mt-3">
-                                            <label>{{fm.label}}</label>
+                                            <label>{{orm.label}}</label>
                                             <div class="input-items default">
                                                 <i class="lni lni-user"></i>
-                                                {{fm}}
+                                                {{form.username}}
                                             </div>
                                     </div> <!-- form input -->
                                 </div>
-                                {% endfor %}
+
+                                <div class="col-md-12">
+                                        <div class="form-input mt-3">
+                                            <label>{{form.age.label}}</label>
+                                            <div class="input-items default">
+                                                <i class="lni lni-spiner-solid"></i>
+                                                {{form.age}}
+                                            </div>
+                                    </div> <!-- form input -->
+                                </div>
+
+                                <div class="col-md-12">
+                                        <div class="form-input mt-3">
+                                            <label>{{form.email.label}}</label>
+                                            <div class="input-items default">
+                                                <i class="lni lni-mail"></i>
+                                                {{form.email}}
+                                            </div>
+                                    </div> <!-- form input -->
+                                </div>
 
                                 <div class="col-md-12">
                                     <div class="single-form pt-25 mt-5">
