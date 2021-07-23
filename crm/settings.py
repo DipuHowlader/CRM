@@ -1,5 +1,6 @@
 from pathlib import Path
 from .secrets import KEY
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,6 +77,12 @@ DATABASES = {
         'USER' : 'postgres',
         'PASSWORD' : '1234',
         'HOST' : 'localhost',
+    }
+}
+
+DATABASES = {
+    'default' :{
+        dj_database_url.config(default='postgres://postgres:1234@localhost/crm_db')
     }
 }
 
